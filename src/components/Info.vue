@@ -1,9 +1,10 @@
 <template>
   <div>
-    <p>Estou trabalhando no momento</p>
+    <p v-if="estaTrabalhando">Estou trabalhando no momento</p>
+    <p v-else>Estou procurando novas oportunidades</p>
     <p>Utilizo as seguintes tecnologias:</p>
     <ul>
-      <li>JavaScript</li>
+      <li v-if="4 > 2">JavaScript</li>
       <li>PHP</li>
       <li>Python</li>
     </ul>
@@ -12,6 +13,11 @@
 
 <script>
   export default {
-    name: 'InfoIn', // Nome tem que bater!
+    name: 'InfoIn',
+    data() {
+      return {
+        estaTrabalhando: false
+      }
+    }
   };
 </script>

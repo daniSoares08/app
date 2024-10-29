@@ -1,17 +1,20 @@
 <template>
   <div>
     <h2>Descrição</h2>
-    <InfoIn /> <!-- Se é esse o nome do componente mesmo -->
+    <InfoIn /> 
+    <FormImp />
   </div>
 </template>
 
 <script>
   import InfoIn from './Info.vue';
+  import FormImp from './form/Form.vue';
 
   export default {
     name: 'NomePessoa',
     components: {
-      InfoIn, // aqui tava faltando vírgula
+      InfoIn,
+      FormImp,
     },
   };
 </script>
