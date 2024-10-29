@@ -8,6 +8,7 @@
       <li>PHP</li>
       <li>Python</li>
     </ul>
+    <p>Acesse esse portfólio <a v-bind:href="meu_link">clicando aqui</a></p>
   </div>
 </template>
 
@@ -16,7 +17,8 @@
     name: 'InfoIn',
     data() {
       return {
-        estaTrabalhando: false
+        estaTrabalhando: false,
+        meu_link: 'https://meu_link.com'
       }
     }
   };
