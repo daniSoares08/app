@@ -22,5 +22,6 @@
         mounted() {
             this.nome = "Carlos"
         }
+        
     }
 </script>
